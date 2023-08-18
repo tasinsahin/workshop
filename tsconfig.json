@@ -1,0 +1,40 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@demo-app/*": [
+        "libs/*"
+      ],
+      "@demo-app/auth": [
+        "libs/auth/src/index.ts"
+      ],
+      "@demo-app/material": [
+        "libs/material/src/index.ts"
+      ],
+      "@demo-app/layout": [
+        "libs/layout/src/index.ts"
+      ],
+      "@demo-app/products": [
+        "libs/products/src/index.ts"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
+}
